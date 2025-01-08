@@ -1,4 +1,4 @@
-import { Container, Navbar, Nav } from 'react-bootstrap'
+import { Container, Navbar, Nav } from 'react-bootstrap';
 
 const BookShopNavbar = function () {
     return (
