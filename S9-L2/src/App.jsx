@@ -1,6 +1,7 @@
 import BookShopNavbar from "./components/BookShopNavbar";
 import BookShopWelcome from "./components/BookShopWelcom";
-import AllTheBooks from "./components/AllTheBooks";
+import AllTheBooksCarousels from "./components/AllTheBooksCarousels";
+import AllTheBooksCards from "./components/AllTheBooksCards";
 import BookShopFooter from "./components/BookShopFooter";
 
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -9,7 +10,8 @@ function App() {
     <div className="bg-dark">
       <BookShopNavbar/>;
       <BookShopWelcome/>;
-      <AllTheBooks/>;
+      <AllTheBooksCarousels/>;
+      <AllTheBooksCards/>;
       <BookShopFooter/>;
     </div>
   )

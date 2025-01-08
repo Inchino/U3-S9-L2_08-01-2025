@@ -2,7 +2,7 @@ import { Carousel, Container, Row, Col } from 'react-bootstrap';
 import libreria from '../../data/books/fantasy.json';
 import { Component } from 'react';
 
-class AllTheBooks extends Component {
+class AllTheBooksCarousels extends Component {
   state = {
     activeLibro: libreria[0], 
   }
@@ -39,4 +39,4 @@ class AllTheBooks extends Component {
   }
 }
 
-export default AllTheBooks;
+export default AllTheBooksCarousels;
