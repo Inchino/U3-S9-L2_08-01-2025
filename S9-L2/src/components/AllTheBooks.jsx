@@ -1,4 +1,4 @@
-import { Carousel, Container, Row, Col, ListGroup } from 'react-bootstrap';
+import { Carousel, Container, Row, Col } from 'react-bootstrap';
 import libreria from '../../data/books/fantasy.json';
 import { Component } from 'react';
 
@@ -10,6 +10,7 @@ class AllTheBooks extends Component {
   render() {
     return (
       <Container>
+        <h3 className='text-light text-center'>Fantasy</h3>
         <Row className="justify-content-center">
           <Col xs={12} md={6}>
             <Carousel
@@ -24,10 +25,8 @@ class AllTheBooks extends Component {
                 return (
                   <Carousel.Item key={libro.asin}>
                     <img src={libro.img} className="w-100"/>
-                    <Carousel.Caption>
-                      <h3>{libro.title}</h3>
-                      <p>{libro.category}</p>
-                      <p>{libro.price}euro</p>
+                    <Carousel.Caption>      
+                      <p className='text-danger h1 bg-dark w-25'>{libro.price}€</p>
                     </Carousel.Caption>
                   </Carousel.Item>
                 )
@@ -35,7 +34,7 @@ class AllTheBooks extends Component {
             </Carousel>
           </Col>
         </Row>
-      </Container>
+      </Container> 
     )
   }
 }
